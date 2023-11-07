@@ -4,8 +4,8 @@ pipeline {
     tools { go '1.21.3' }
 
     environment {
-        DOCKER_IMAGE = 'ssahblr/go-api:latest'
-        DOCKERHUB_CREDENTIALS = credentials('ssah-blr-docker')
+        DOCKER_IMAGE = 'ssahblr/go-api:latest'                   // Update Name of Target Docker Image
+        DOCKERHUB_CREDENTIALS = credentials('ssah-blr-docker')   // Update the Docker Hub credentials
     }
 
     stages {
